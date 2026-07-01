@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="lo">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FIT SKU Internship</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+  <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    body {
+      font-family: 'Noto Sans Lao', sans-serif;
+      background-color: #f4f6f9;
+    }
+
+    .login-container {
+      max-width: 450px;
+      margin-top: 10%;
+    }
+
+    .card {
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-bg {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="loginPage" class="container login-container">
+    <div class="card p-4">
+      <div class="text-center mb-4">
+        <i class="fa-solid fa-graduation-cap fa-3x text-primary"></i>
+        <h4 class="mt-2 fw-bold text-navy">ລະບົບລົງທະບຽນການເຝຶກຫັດວິຊາຊີບ</h4>
+        <h4 class="mt-2 fw-bold text-navy">ຄະນະເຕັກໂນໂລຊີຂໍ້ມູນຂ່າວສານ</h4>
+        <small class="text-muted">ພັດທະນາໂດຍ | ປອ.ຢູລະນັນ ເລືອງລິດ</small>
+        <small class="text-muted">ຮອງຫົວໜ້າພະແນກຄຸ້ມຄອງວິຊາການ ຄະນະເຕັກໂນໂລຊີຂໍ້ມູນຂ່າວສານ</small>
+      </div>
+      <form id="loginForm">
+        <div class="mb-3">
+          <label class="form-label">ຊື່ຜູ້ໃຊ້ / ລະຫັດນັກສຶກສາ</label>
+          <input type="text" id="username" class="form-control" required placeholder="ໃສ່ລະຫັດນັກສຶກສາ">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">ລະຫັດຜ່ານ</label>
+          <input type="password" id="password" class="form-control" required placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary w-100 py-2"><i class="fa-solid fa-right-to-bracket me-2"></i> ເຂົ້າສູ່ລະບົບ</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="mainApp" class="d-none">
+    <?!= include('Navbar'); ?>
+    <div class="container-fluid my-4">
+      <div id="viewContainer"></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <?!= include('JavaScript'); ?>
+</body>
+
+</html>
